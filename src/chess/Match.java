@@ -8,6 +8,7 @@ public class Match {
 
 	public Match() {
 		board = new Board(8, 8);
+		initialSetup();
 	}
 
 	public ChessPiece[][] getPieces() {
@@ -18,5 +19,9 @@ public class Match {
 			}
 		}
 		return mat;
+	}
+
+	private void initialSetup() {
+		// board.placePiece(new Rook(board, Color.WHITE), new Position(2, 1));
 	}
 }
